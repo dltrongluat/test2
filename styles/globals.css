@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  font-family: "ABeeZee";
+}
+
+
+@font-face {
+  font-family: "Roslindale";
+  font-weight: 700;
+  src: url("../public/font/Roslindale/Roslindale-DeckNarrowBold-Testing.woff2");
+}
+@font-face {
+  font-family: "Roslindale";
+  font-weight: 600;
+  src: url("../public/font/Roslindale/Roslindale-DeckNarrowSemiBold-Testing.woff2");
+}
+@font-face {
+  font-family: "Roslindale";
+  font-weight: 500;
+  src: url("../public/font/Roslindale/Roslindale-DeckNarrowMedium-Testing.woff2");
+}
+@font-face {
+  font-family: "Roslindale";
+  font-weight: 400;
+  src: url("../public/font/Roslindale/Roslindale-DeckNarrowRegular-Testing.woff2");
+}
+/* FONT-neue-haas-grotesk-display-pro */
+
+@font-face {
+  font-family: "Neue-haas-grotesk-display-pro";
+  font-weight: 400;
+  src: url("../public/font/Neue/NeueHaasDisplayLight.woff2");
+}
+@font-face {
+  font-family: "Neue-haas-grotesk-display-pro";
+  font-weight: 500;
+  src: url("../public/font/Neue/NeueHaasDisplayRoman.woff2");
+}
+@font-face {
+  font-family: "Neue-haas-grotesk-display-pro";
+  font-weight: 600;
+  src: url("../public/font/Neue/NeueHaasDisplayMedium.woff2");
+}
+@font-face {
+  font-family: "Neue-haas-grotesk-display-pro";
+  font-weight: 700;
+  src: url("../public/font/Neue/NeueHaasDisplayBold.woff2");
+}
+/* FONT-ABeeZee */
+@font-face{
+  font-family: "ABeeZee";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../public/font/ABeeZee/ABeeZee-Regular.woff2");
+}
+@font-face{
+  font-family: "ABeeZee";
+  font-weight: 400;
+  font-style: italic;
+  src: url("../public/font/ABeeZee/ABeeZee-Italic.woff2");
+}
+
+/* @import url("https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro"); */
+
+.custom-img {
+  background-image: url("https://images.unsplash.com/photo-1504025468847-0e438279542c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1269&q=80");
+}

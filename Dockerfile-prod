@@ -1,0 +1,26 @@
+FROM 968557029040.dkr.ecr.ap-southeast-1.amazonaws.com/node:16-alpine as base
+
+FROM base AS builder
+
+RUN apk add --no-cache git openssh
+WORKDIR /webapps
+
+COPY package.json /webapps
+RUN yarn install
+COPY . /webapps
+RUN yarn build:prod
+
+FROM base AS runner
+WORKDIR /app
+
+ENV NODE_ENV production
+
+COPY --from=builder /webapps/public ./public
+
+COPY --from=builder /webapps/.next/standalone ./
+COPY --from=builder /webapps/.next/static ./.next/static
+
+ENV PORT 80
+
+CMD ["node", "server.js"]
+
